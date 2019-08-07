@@ -51,11 +51,14 @@ docker exec -it my_postgres bash
 # 也可以直接连接数据库
 docker exec -it my_postgres psql -U postgres
 
-# 查看所有容器
-docker ps
+# 查看所有容器（-a 包含已停止的容器）
+docker ps -a
 
 # 停止容器运行 （停止容器之后 docker ps看不到）
 docker stop [容器id | 容器name]
+
+# 重启容器
+docker restart [容器id | 容器name]
 
 # 删除容器
 docker rm [容器id | 容器name]
