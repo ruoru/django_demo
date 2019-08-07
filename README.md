@@ -122,4 +122,9 @@ alter table user_tbl rename to backup_tbl;
 drop table if exists backup_tbl;
 ```
 
+### docker 启动 redis
 
+```
+# 启动镜像为一个容器
+docker run --privileged=true --name my_redis -p 6379:6379 -v ~/Documents/RedisData:/data -v ~/Documents/conf/redis.conf:/etc/redis/redis.conf -d redis redis-server /etc/redis/redis.conf
+```
