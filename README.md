@@ -43,7 +43,7 @@ docker images
 docker rmi [镜像id | 镜像name]
 
 # 启动镜像为一个容器
-docker run --name my_postgres -d -v /Users/chenshijie342/Documents/PostgresData:/var/lib/postgresql/data -p 54320:5432 -e POSTGRES_PASSWORD=111 postgres:latest
+docker run --name my_postgres -d -v ~/Documents/PostgresData:/var/lib/postgresql/data -p 54320:5432 -e POSTGRES_PASSWORD=111 postgres:latest
 
 # 进入到容器的控制台 （容器内的命令一般在 /bin 或者 /usr/bin）
 docker exec -it my_postgres bash
