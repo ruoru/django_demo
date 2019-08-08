@@ -88,6 +88,9 @@ psql -U postgres -p 54321 -h 192.168.100.172
 
 ### postgres 常用sql命令
 ```
+# 创建数据库
+create database polls;
+
 # 创建新表 
 create table user_tbl(name varchar(20), signup_date date);
 
